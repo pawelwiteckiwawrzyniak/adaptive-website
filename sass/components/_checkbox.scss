@@ -1,20 +1,22 @@
 .checkbox {
   display: flex;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #757575;
-  margin: 0px 54px;
+  justify-content: space-evenly;
+  margin: 0px 40px;
 
   &__label {
     position: relative;
     cursor: pointer;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+    color: #757575;
   }
 
   &__icon {
     position: absolute;
-    left: -23px;
-    top: 4px;
+    left: -24px;
+    top: 0px;
     width: 16px;
     height: 15px;
     background-color: white;
