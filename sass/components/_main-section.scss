@@ -1,0 +1,217 @@
+.section {
+  width: 480px;
+  height: 400px;
+  text-align: center;
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/main-background-400-480.jpg);
+  background-color: $background-color;
+  background-size: 480px 400px;
+  padding: 118px 57px;
+
+  &__heading {
+    color: white;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin: 0 0 30px 0;
+  }
+
+  &__button {
+    background-color: $primary-color;
+    color: white;
+    font-weight: 700;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.main-list {
+  list-style: none;
+  margin: 60px 15px;
+  padding: 0;
+
+  &__element {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  &__background {
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    width: 450px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__image {
+    width: 70px;
+    height: 70px;
+  }
+
+  &__heading {
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin: 30px 0 10px 0;
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
+    margin: 0;
+  }
+}
+
+.team {
+  background-color: #f5f4fa;
+  padding: 60px 15px;
+  text-align: center;
+
+  &__heading {
+    margin: 0 0 30px 0;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $secondary-color;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__element {
+    background: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__label {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $secondary-color;
+    margin: 30px 0 10px 0;
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #757575;
+    margin: 0 0 16px 0;
+  }
+}
+
+.clients {
+  margin: 60px 15px;
+
+  &__heading {
+    text-align: center;
+    margin: 0 0 30px 0;
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 0.03em;
+    color: $secondary-color;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__element {
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    width: 210px;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      border-color: $primary-color;
+      cursor: pointer;
+    }
+
+    &:hover .clients__icon {
+      fill: $primary-color;
+    }
+  }
+
+  &__icon {
+    width: 106px;
+    height: 60px;
+    fill: #afb1b8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+/* .main-title {
+  height: 600px;
+  text-align: center;
+  padding: 200px 452px 280px 452px;
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/main-background.jpg);
+  background-color: $background-color;
+
+  &__heading {
+    color: white;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin: 0 0 30px 0;
+  }
+
+  &__button {
+    background-color: $primary-color;
+    color: white;
+    font-weight: 700;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    cursor: pointer;
+  }
+}
+ */

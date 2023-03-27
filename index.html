@@ -16,6 +16,52 @@
   <body class="container">
     <header class="page-header">
       <div class="page-header__elements">
+        <ul class="page-header__tabs">
+          <li>
+            <a class="logo page-header__logo" href="./index.html"
+              ><span class="logo__color">Web</span>Studio</a
+            >
+          </li>
+          <li>
+            <nav class="navigation">
+              <ul class="navigation__elements">
+                <li class="navigation__tab">
+                  <a
+                    class="navigation__link navigation__link--highlight"
+                    href="./index.html"
+                    >Agencja</a
+                  >
+                </li>
+                <li class="navigation__tab">
+                  <a class="navigation__link" href="./portfolio.html"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="navigation__tab">
+                  <a class="navigation__link" href="#contact">Kontakt</a>
+                </li>
+              </ul>
+            </nav>
+          </li>
+        </ul>
+        <ul class="header-contact">
+          <li class="header-contact__element">
+            <svg class="header-contact__icon" width="16px" height="12px">
+              <use href="./images/icons.svg#icon-envelope-white"></use>
+            </svg>
+            <a class="header-contact__link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="header-contact__element">
+            <svg class="header-contact__icon" width="10px" height="16px">
+              <use href="./images/icons.svg#icon-smartphone"></use>
+            </svg>
+            <a class="header-contact__link" href="tel:+48111111111"
+              >+48 111 111 111</a
+            >
+          </li>
+        </ul>
         <a class="logo"><span class="logo__color">Web</span>Studio</a>
         <button
           class="menu-toggle js-open-menu"
@@ -87,6 +133,39 @@
           </p>
         </li>
       </ul>
+      <section class="specialization">
+        <h2 class="specialization__title">Czym się zajmujemy</h2>
+        <ul class="specialities">
+          <li class="specialities__element">
+            <img
+              src="./images/things1.jpg"
+              alt="Someone typing code on a
+          keyboard"
+              height="294"
+              width="370"
+            />
+            <div class="specialities__overlay">Aplikacje komputerowe</div>
+          </li>
+          <li class="specialities__element">
+            <img
+              src="./images/things2.jpg"
+              alt="Someone connecting phone and laptop through wireless connection"
+              height="294"
+              width="370"
+            />
+            <div class="specialities__overlay">Aplikacje mobilne</div>
+          </li>
+          <li class="specialities__element">
+            <img
+              src="./images/things3.jpg"
+              alt="Someone looking at a palette of colors on a tablet"
+              height="294"
+              width="370"
+            />
+            <div class="specialities__overlay">Rozwiązania graficzne</div>
+          </li>
+        </ul>
+      </section>
       <section class="team">
         <h2 class="team__heading">Nasz zespół</h2>
         <ul class="team__list">
@@ -94,10 +173,9 @@
             <figure class="figure">
               <img
                 src="./images/team1.jpg"
-                srcset="./images/team1@2x.jpg 2x"
+                srcset="./images/team1.jpg 450w, ./images/team1@2x.jpg 900w"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 767px) 450px"
                 alt="Mężczyzna z ciemnymi włosami, w brązowej koszuli i w okularach"
-                width="450px"
-                height="460px"
               />
               <figcaption class="figcaption">
                 <p class="team__label">John Doe</p>
@@ -131,10 +209,9 @@
             <figure class="figure">
               <img
                 src="./images/team2.jpg"
-                srcset="./images/team2@2x.jpg 2x"
+                srcset="./images/team2.jpg 450w, ./images/team2@2x.jpg 900w"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 767px) 450px"
                 alt="Kobieta z jasnymi włosami, w ciemnej marynarce i w okularach"
-                width="450px"
-                height="460px"
               />
               <figcaption class="figcaption">
                 <p class="team__label">John Doe</p>
@@ -168,10 +245,9 @@
             <figure class="figure">
               <img
                 src="./images/team3.jpg"
-                srcset="./images/team3@2x.jpg 2x"
+                srcset="./images/team3.jpg 450w, ./images/team3@2x.jpg 900w"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 767px) 450px"
                 alt="Mężczyzna z ciemnymi włosami i w błękitnej koszuli"
-                width="450px"
-                height="460px"
               />
               <figcaption class="figcaption">
                 <p class="team__label">John Doe</p>
@@ -205,10 +281,9 @@
             <figure class="figure">
               <img
                 src="./images/team4.jpg"
-                srcset="./images/team4@2x.jpg 2x"
+                srcset="./images/team4.jpg 450w, ./images/team4@2x.jpg 900w"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 767px) 450px"
                 alt="Mężczyzna z ciemnymi włosami, w czarnej koszulce i w okularach"
-                width="450px"
-                height="460px"
               />
               <figcaption class="figcaption">
                 <p class="team__label">John Doe</p>
@@ -276,7 +351,7 @@
         </ul>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer" id="contact">
       <address class="address">
         <a class="logo logo--white"
           ><span class="logo__color">Web</span>Studio</a
@@ -406,10 +481,25 @@
     </div>
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
-        <svg>
+        <svg height="40px">
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
+      <ul class="mobile-list">
+        <li class="mobile-list__nav">Agencja</li>
+        <li class="mobile-list__nav">Portfolio</li>
+        <li class="mobile-list__nav">Kontakt</li>
+      </ul>
+      <a class="mobile-list__tel" href="tel:+48111111111">+48 111 111 111</a>
+      <a class="mobile-list__email" href="mailto:info@devstudio.com"
+        >info@devstudio.com</a
+      >
+      <ul class="mobile-social">
+        <li class="mobile-social__link">Instagram</li>
+        <li class="mobile-social__link">Twitter</li>
+        <li class="mobile-social__link">Facebook</li>
+        <li class="mobile-social__link">LinkedIn</li>
+      </ul>
     </div>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
@@ -418,75 +508,19 @@
   <!--  <body class="container">
     <header class="page-header">
       <div class="page-header__elements">
-        <ul class="page-header__tabs">
-          <li>
-            <a class="logo page-header__logo" href="./index.html"
-              ><span class="logo__color">Web</span>Studio</a
-            >
-          </li>
-          <li>
-            <nav class="navigation">
-              <ul class="navigation__elements">
-                <li class="navigation__tab">
-                  <a
-                    class="navigation__link navigation__link--highlight"
-                    href="./index.html"
-                    >Agencja</a
-                  >
-                </li>
-                <li class="navigation__tab">
-                  <a class="navigation__link" href="./portfolio.html"
-                    >Portfolio</a
-                  >
-                </li>
-                <li class="navigation__tab">
-                  <a class="navigation__link" href="#contact">Kontakt</a>
-                </li>
-              </ul>
-            </nav>
-          </li>
-          <li>
-            <button
-              class="menu-toggle js-open-menu"
-              aria-expanded="false"
-              aria-controls="mobile-menu"
-            >
-              <svg>
-                <use href="./images/icons.svg#icon-menu-burger"></use>
-              </svg>
-            </button>
-          </li>
-        </ul>
-        <ul class="header-contact">
-          <li class="header-contact__element">
-            <svg class="header-contact__icon" width="16px" height="12px">
-              <use href="./images/icons.svg#icon-envelope-white"></use>
-            </svg>
-            <a class="header-contact__link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="header-contact__element">
-            <svg class="header-contact__icon" width="10px" height="16px">
-              <use href="./images/icons.svg#icon-smartphone"></use>
-            </svg>
-            <a class="header-contact__link" href="tel:+48111111111"
-              >+48 111 111 111</a
-            >
-          </li>
-        </ul>
+        
       </div>
     </header>
     <main>
-      <div class="main-title">
-        <h1 class="main-title__heading">
+      <section class="section">
+        <h1 class="section__heading">
           EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
         </h1>
         <button class="main-title__button" type="button" data-modal-open>
           Zamów usługę
         </button>
-      </div>
-      <div class="section">
+      </section>
+      
         <ul class="main-list">
           <li class="main-list__element">
             <div class="main-list__image">
@@ -529,38 +563,6 @@
             non sodales dui. Interdum et malesuada
           </li>
         </ul>
-        <h2 class="title">Czym się zajmujemy</h2>
-        <ul class="specialities">
-          <li class="specialities__element">
-            <img
-              src="./images/things1.jpg"
-              alt="Someone typing code on a
-          keyboard"
-              height="294"
-              width="370"
-            />
-            <div class="specialities__overlay">Aplikacje komputerowe</div>
-          </li>
-          <li class="specialities__element">
-            <img
-              src="./images/things2.jpg"
-              alt="Someone connecting phone and laptop through wireless connection"
-              height="294"
-              width="370"
-            />
-            <div class="specialities__overlay">Aplikacje mobilne</div>
-          </li>
-          <li class="specialities__element">
-            <img
-              src="./images/things3.jpg"
-              alt="Someone looking at a palette of colors on a tablet"
-              height="294"
-              width="370"
-            />
-            <div class="specialities__overlay">Rozwiązania graficzne</div>
-          </li>
-        </ul>
-      </div>
       <div class="team">
         <h2 class="title">Nasz zespół</h2>
         <ul class="team__list">
