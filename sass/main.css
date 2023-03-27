@@ -1352,4 +1352,15 @@
   .form-newsletter {
     margin: 72px auto 0;
   }
+}
+@media screen and (min-width: 1200px) {
+  .navigation__link--highlight::after {
+    content: "";
+    display: block;
+    height: 4px;
+    background-color: #2196f3;
+    border-radius: 2px;
+    position: relative;
+    top: 31px;
+  }
 }/*# sourceMappingURL=main.css.map */
